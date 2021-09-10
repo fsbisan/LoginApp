@@ -39,6 +39,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9291A1FE26EB17EF000FB05B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				92EC23CE26E7CE8200939495 /* Main.storyboard */,
+				92EC23D326E7CE8500939495 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9291A1FF26EB1820000FB05B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				92EC23CC26E7CE8200939495 /* LoginViewController.swift */,
+				92EC23DC26E7DC6100939495 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9291A20026EB1862000FB05B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92EC23D126E7CE8500939495 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9291A20126EB1878000FB05B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				92EC23C826E7CE8200939495 /* AppDelegate.swift */,
+				92EC23CA26E7CE8200939495 /* SceneDelegate.swift */,
+				92EC23D626E7CE8500939495 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9291A20226EB188C000FB05B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		92EC23BC26E7CE8200939495 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +101,11 @@
 		92EC23C726E7CE8200939495 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				92EC23C826E7CE8200939495 /* AppDelegate.swift */,
-				92EC23CA26E7CE8200939495 /* SceneDelegate.swift */,
-				92EC23CC26E7CE8200939495 /* LoginViewController.swift */,
-				92EC23DC26E7DC6100939495 /* WelcomeViewController.swift */,
-				92EC23CE26E7CE8200939495 /* Main.storyboard */,
-				92EC23D126E7CE8500939495 /* Assets.xcassets */,
-				92EC23D326E7CE8500939495 /* LaunchScreen.storyboard */,
-				92EC23D626E7CE8500939495 /* Info.plist */,
+				9291A1FF26EB1820000FB05B /* ViewControllers */,
+				9291A1FE26EB17EF000FB05B /* Storyboards */,
+				9291A20226EB188C000FB05B /* Models */,
+				9291A20126EB1878000FB05B /* App */,
+				9291A20026EB1862000FB05B /* Resources */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -291,15 +331,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fsbisan.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,15 +350,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fsbisan.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
