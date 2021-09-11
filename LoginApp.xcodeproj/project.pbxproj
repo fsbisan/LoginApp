@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9291A20426EB9FD3000FB05B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291A20326EB9FD3000FB05B /* User.swift */; };
+		9291A20626EBDEDD000FB05B /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291A20526EBDEDD000FB05B /* AboutMeViewController.swift */; };
 		92EC23C926E7CE8200939495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC23C826E7CE8200939495 /* AppDelegate.swift */; };
 		92EC23CB26E7CE8200939495 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC23CA26E7CE8200939495 /* SceneDelegate.swift */; };
 		92EC23CD26E7CE8200939495 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC23CC26E7CE8200939495 /* LoginViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9291A20326EB9FD3000FB05B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9291A20526EBDEDD000FB05B /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		92EC23C526E7CE8200939495 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EC23C826E7CE8200939495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EC23CA26E7CE8200939495 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			children = (
 				92EC23CC26E7CE8200939495 /* LoginViewController.swift */,
 				92EC23DC26E7DC6100939495 /* WelcomeViewController.swift */,
+				9291A20526EBDEDD000FB05B /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 		9291A20226EB188C000FB05B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9291A20326EB9FD3000FB05B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +189,8 @@
 				92EC23CD26E7CE8200939495 /* LoginViewController.swift in Sources */,
 				92EC23DD26E7DC6100939495 /* WelcomeViewController.swift in Sources */,
 				92EC23C926E7CE8200939495 /* AppDelegate.swift in Sources */,
+				9291A20426EB9FD3000FB05B /* User.swift in Sources */,
+				9291A20626EBDEDD000FB05B /* AboutMeViewController.swift in Sources */,
 				92EC23CB26E7CE8200939495 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -36,7 +36,7 @@
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="LoginPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yir-Ij-c6y"/>
-                                            <segue destination="n3V-fV-y40" kind="modal" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="ebP-jx-TDA"/>
+                                            <segue destination="xbb-8o-RCx" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="ebP-jx-TDA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -125,6 +125,7 @@
                             <constraint firstItem="gvB-XH-iJE" firstAttribute="top" secondItem="FJe-L2-wY1" secondAttribute="top" constant="150" id="wD8-NM-uxY"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="tv" catalog="system" id="osb-XW-kq1"/>
                     <navigationItem key="navigationItem" id="ieu-e2-mqf"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="iLJ-6S-UUD" id="hv5-SX-12t"/>
@@ -133,10 +134,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvO-JR-Rwe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="sBN-nN-Ohc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="878" y="117"/>
+            <point key="canvasLocation" x="-100" y="918"/>
+        </scene>
+        <!--About Me View Controller-->
+        <scene sceneID="5Sl-D3-Oh1">
+            <objects>
+                <viewController id="vMg-zV-T4T" customClass="AboutMeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3gn-EU-9pD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyb-6p-SM2">
+                                <rect key="frame" x="16" y="244" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Uo-UJ-zvF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tyb-6p-SM2" firstAttribute="leading" secondItem="3Uo-UJ-zvF" secondAttribute="leading" constant="16" id="6Os-sj-QKh"/>
+                            <constraint firstItem="tyb-6p-SM2" firstAttribute="top" secondItem="3Uo-UJ-zvF" secondAttribute="top" constant="200" id="C6X-hX-YI0"/>
+                            <constraint firstItem="3Uo-UJ-zvF" firstAttribute="trailing" secondItem="tyb-6p-SM2" secondAttribute="trailing" constant="16" id="Lkh-po-bpe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fjF-dQ-uKt"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="tyb-6p-SM2" id="hI1-Gs-ZJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mea-6N-T3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="918"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GG1-gC-o0R">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xbb-8o-RCx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1uz-md-OMW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="n3V-fV-y40" kind="relationship" relationship="viewControllers" id="RTB-lK-gxk"/>
+                        <segue destination="mka-Mh-RGC" kind="relationship" relationship="viewControllers" id="aib-PB-Efy"/>
+                        <segue destination="ZNk-44-R0b" kind="relationship" relationship="viewControllers" id="3pC-xo-Drs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akD-9b-gAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="116"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pn5-lz-6Ab">
+            <objects>
+                <viewController id="ZNk-44-R0b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcj-C8-Y47">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dSo-wG-VmS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="u1T-ri-aYr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AiB-xS-gBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="918"/>
+        </scene>
+        <!--AboutMe-->
+        <scene sceneID="hg4-6m-jCl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mka-Mh-RGC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="AboutMe" image="person.crop.circle.badge.checkmark.fill" catalog="system" id="t9i-Ng-Dxd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nzr-Od-P9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vMg-zV-T4T" kind="relationship" relationship="rootViewController" id="BPP-Tv-zNL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1F-NS-2H5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="918"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle.badge.checkmark.fill" catalog="system" width="128" height="113"/>
+        <image name="tv" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
